@@ -10,4 +10,8 @@ Examples:
 """
 def addition(a, b):
     # Your code here
+    return a + b
 
+    # console.log()
+print(addition(3, 2) )
+ 

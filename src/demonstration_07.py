@@ -13,4 +13,12 @@ Examples:
 """
 def nth_smallest(lst, n):
     # Your code here
+    if n > len(lst): # Edge case
+        return None
+    lst.sort() 
+    # 
+    return lst[n-1]
 
+    
+print(nth_smallest([7, 3, 5, 1], 2))
+print(nth_smallest([1, 3, 5, 7], 5))
