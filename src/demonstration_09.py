@@ -14,4 +14,16 @@ Notes:
 """
 def mapping(letters):
     # Your code here
+    # to use with a dictionary (key/value pairs)
+    letter_dict = {} 
+    
+    for letter in letters:
+        # add a new key/value to the dictionary
+        # the key is the letter
+        # the value is the Capitalized version of the letter
+        letter_dict[letter] = letter.upper()
+        # letter is key => letter.upper is the value (key/value)
 
+    return letter_dict
+
+    print(mapping(["a", "v", "y", "z"]))

@@ -10,6 +10,13 @@ Examples:
 - num_args(True, False) ➞ 2
 - num_args({}) ➞ 1
 """
-def num_args():
-    # Your code here
+# similiar to ...array in JS => *args
 
+def num_args(*args, arg2):
+    # Your code here
+    print(len(args))
+    return
+
+num_args("foo", "bar")
+num_args("foo")
+num_args("foo", "bar", arg2='this is a keyword arg')

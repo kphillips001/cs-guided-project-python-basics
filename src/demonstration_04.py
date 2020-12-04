@@ -14,4 +14,4 @@ def find_perimeter(length, width):
     # 2L + 2W
     return 2 * length + 2 * width
 
-print(find_perimeter(6, 7))
+print(find_perimeter(7, 8))

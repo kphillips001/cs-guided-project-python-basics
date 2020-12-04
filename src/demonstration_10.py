@@ -14,5 +14,14 @@ Notes:
 - There won't be any awkward decimal numbers, only 0.5 to deal with.
 """
 def get_discounts(nums, percentage):
-    # Your code here
+    # Your code 
+    # Remove the % sign (take all the elements minus the last item)
+    # Use Python array access => subarrays =  : -1 => strips last item
+    discount_percent = int(percentage[ : -1]) / 100
+    new_nums = []
+    for num in nums:
+        # apply the discount
+        new_nums.append( num * discount_percent )
+    return new_nums
 
+print(get_discounts([10, 20, 40, 80], "75%"))

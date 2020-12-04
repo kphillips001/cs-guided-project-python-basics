@@ -12,6 +12,7 @@ def string_int(txt):
     # Your code here
     return int(txt)
 
+#Takes an integer and returns as a string
 def int_string(num):
     return str(num)
 
